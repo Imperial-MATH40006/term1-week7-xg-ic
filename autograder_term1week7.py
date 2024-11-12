@@ -409,8 +409,8 @@ def question3_h(digits):
     else: 
         raise AssertionError('All tests failed!!')         
 
-def testPyTriple(_globals,n,exists=True):
-    pt = _globals["pyTriple"](n)
+def testPyTriple(_globals,A,exists=True):
+    pt = _globals["pyTriple"](A)
     if exists:
         a, b, c, product = pt
         return (a>0 and b>0 and a**2 + b**2 == c**2 and a*b*c == product)
